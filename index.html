@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Travis Scott - Biografía</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica', sans-serif;
+            line-height: 1.6;
+            background: #000;
+            color: #fff;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #b82c2c;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            margin: 100px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .section:nth-child(even) {
+            direction: rtl;
+        }
+        
+        .section:nth-child(even) .text {
+            direction: ltr;
+        }
+        
+        .section img {
+            width: 100%;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .section img:hover {
+            transform: scale(1.05);
+        }
+        
+        .text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #b82c2c;
+        }
+        
+        .text p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+        
+        .achievements {
+            background: #1a1a1a;
+            padding: 50px 0;
+            margin: 50px 0;
+        }
+        
+        .achievements ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .achievements li {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .achievements li:hover {
+            transform: translateY(-10px);
+            background: #3d3d3d;
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section:nth-child(even) {
+                direction: ltr;
+            }
+        }
+
+       .btn-shine {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #8a2be2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-shine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-shine:hover::before {
+    animation: shine 0.75s;
+}
+
+@keyframes shine {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+     .btn-outline {
+    background: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #4CAF50;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Travis Scott</h1>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <img src="E:/Travis scott/t5.jpg" alt="Travis Scott">
+            <div class="text">
+                <h2>Biografía</h2>
+                <p>Jacques Bermon Webster II, conocido mundialmente como Travis Scott, nació el 30 de abril de 1991 en Houston, Texas. Su historia es un testimonio de pasión, creatividad y determinación en la industria musical.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <img src="E:/Travis scott/t2.jpg" alt="Travis Scott">
+            <div class="text">
+                <h2>Inicios</h2>
+                <p>Comenzó su viaje musical a los 16 años como productor, formando posteriormente el dúo The Graduates. Su pasión por la música lo llevó a dejar la universidad para perseguir sus sueños en Nueva York.</p>
+            </div>
+        </div>
+        
+        <div class="achievements">
+            <h2 style="text-align: center; margin-bottom: 40px;">Logros Destacados</h2>
+            <ul>
+                <li>Múltiples #1 en Billboard</li>
+                <li>Nominaciones Grammy</li>
+                <li>Festival Astroworld</li>
+                <li>Colaboraciones Icónicas</li>
+            </ul>
+        </div>
+        
+        <div class="section"><img src="E:/Travis scott/t3.jpg" alt="Travis Scott">
+            <div class="text">
+                <h2>Impacto Cultural</h2>
+                <p>Travis Scott ha revolucionado la industria musical y la cultura pop. Sus colaboraciones con marcas, su influencia en la moda y su innovador estilo musical lo han convertido en un ícono de su generación.</p>
+            </div>
+        </div>
+    </div>
+<div class="achievements">
+            <h3 style="text-align: center; margin-bottom: 40px;">Mas de TRAVIS SCOTT</h3>
+            <ul>
+                <a href="file:///E:/Travis%20scott/colaboraciones.html" class="btn-shine">colaboraciones</a>
+                <a href="file:///E:/Travis%20scott/discografia%20de%20scott.html" class="btn-shine">discografia</a>
+                <a href="file:///E:/Travis%20scott/discos%20famosos%20de%20scott.html" class="btn-shine">discos mas escuchados</a>
+                <a href="https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY?si=eTWskKVxSM-ndDN4HREHwg" class="btn-outline">¡visita su perfil de Spotify!</a>
+            </ul>
+        </div>
+
+       <p><center>Pagina creada por el alumno Axel zaid Mtz Budar del "3C"</p></center>
+</body>
+</html>
